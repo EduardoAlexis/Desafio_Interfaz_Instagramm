@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+
+		body{
+			background: grey;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		}
+		.header_insta{
+			width: 414px;
+			height: 50px;
+			margin: 0 0 10px 0;
+		}
+		.insta{
+			background: rgb(255, 255, 255);
+			width: 414px ;
+			border-radius: 1%;
+			height: 1000px;
+		}
+		.historias{
+			display: grid;
+			grid-template: 80px / repeat(5, 1fr) ;
+			justify-content: space-around;
+			align-content: space-around;
+			justify-items: center;
+			align-items: center;
+		}
+		.picture{
+			border-radius: 50%;
+			width: 55px;
+			height: 55px;
+		}
+		.nombres{
+			display: grid;
+			grid-template: 10px / repeat(5, 1fr) ;
+			justify-content: space-around;
+			align-content: space-around;
+			justify-items: center;
+			align-items: center;
+		}
+		.container{
+			width: 58px;
+			height: 58px;
+			border: 2px solid rgba(221, 6, 241, 0.589);
+			border-radius: 50%;
+			display: inline-grid;
+			justify-content: center;
+			align-items: center;
+		}
+		.recientes{
+			display: flex;
+			width: 414px;
+			height: 50px;
+			justify-content: center;
+			align-items: center;
+			margin: 10px 0;
+			font-size: 10px;
+		}
+		.fotos{
+			grid-template: repeat(4, 136px) / repeat(3, 136px) ;
+			height: 550px;
+			display: grid;
+			justify-content: space-around;
+			align-content: space-around;
+
+		}
+		.post_overlay{
+			display: flex;
+			text-align: center;
+			justify-content: space-evenly;
+			align-items: center;
+			background: rgba(27, 27, 27, 0.616);
+			position: absolute;
+			opacity: 0;
+			width: 136px;
+			height: 136px;
+			transition: 0.8s;
+		}			
+		span{
+			color: white;
+		}
+		.post{
+
+			display: flex;
+		}
+		.account{
+			width: 136px;
+			height: 136px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.accountp{
+			width: 136px;
+			height: 136px;
+		}
+
+		.post:hover .post_overlay{
+			opacity: 1;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="insta">
+		<div class="header_insta"><img src="logo.png" alt="" width="40px" height="40px" style="margin: 10px;" > <img src="ins.jpg" alt="" width="120px" height="40px" style="margin: 10px;"> <img src="chat.png" alt="" width="40px" height="40px" style="margin: 10px 0 10px 140px;"></div>
+		<div class="historias">
+			<div class="container">
+				<img class="picture" src="img.png" alt=""  >
+			</div>
+			<div class="container"><img class="picture" src="Oil Painting.jpg" alt=""  ></div>
+			<div class="container"><img class="picture" src="Washington.jpg" alt=""  ></div>
+			<div class="container"><img class="picture" src="eclabousse.jpg" alt=""  ></div>
+			<div class="container"><img class="picture" src="Hatch.jpg" alt=""  ></div>
+		</div>
+		<div class="nombres">
+			<div class="name">ervio</div>
+			<div class="name">alexa</div>
+			<div class="name">yuimi</div>
+			<div class="name">sana01</div>
+			<div class="name">sem23w</div>
+	
+		</div>
+		<div class="recientes">
+			<div>
+				<a>PUBLICACIONES / RECIENTES</a>
+			</div>
+		</div>
+		<div class="fotos">
+			<div class="account">
+				<a href="" class="post">
+					<img class="accountp" src="basketball.jpg" alt="" >
+					<span class="post_overlay">
+						<span>150</span>
+						<span>50</span>
+					</span>
+				</a>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="img.png" alt="" >
+						<span class="post_overlay">
+							<span>657</span>
+							<span>35</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="Bijapur House.jpg" alt="" >
+						<span class="post_overlay">
+							<span>1222</span>
+							<span>856</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="castle.jpg" alt="" >
+						<span class="post_overlay">
+							<span>654</span>
+							<span>323</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="eclabousse.jpg" alt="" >
+						<span class="post_overlay">
+							<span>875</span>
+							<span>34</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="Falconer's Bag.jpg" alt="" >
+						<span class="post_overlay">
+							<span>237</span>
+							<span>87</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="Hatch.jpg" alt="" >
+						<span class="post_overlay">
+							<span>456</span>
+							<span>65</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="Washington.jpg" alt="" >
+						<span class="post_overlay">
+							<span>2344</span>
+							<span>80</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="Shoes.jpg" alt="" >
+						<span class="post_overlay">
+							<span>423</span>
+							<span>3</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="Quilt 2.jpg" alt="" >
+						<span class="post_overlay">
+							<span>23</span>
+							<span>234</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="Oil Painting.jpg" alt="" >
+						<span class="post_overlay">
+							<span>34</span>
+							<span>2</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="account">
+				<div class="account">
+					<a href="" class="post">
+						<img class="accountp" src="img.png" alt="" >
+						<span class="post_overlay">
+							<span>12</span>
+							<span>5</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
